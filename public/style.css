@@ -1,0 +1,134 @@
+/* Reset & basics */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+body {
+  background: #f4f6f8;
+  color: #333;
+}
+
+/* Login page */
+.login-container {
+  max-width: 350px;
+  margin: 100px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.login-container input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.login-container button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+}
+.login-container button:hover {
+  background: #0056b3;
+}
+
+/* Dashboard */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #007bff;
+  color: white;
+}
+header h1 {
+  font-size: 24px;
+}
+header button {
+  background: white;
+  color: #007bff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+header button:hover {
+  background: #e6e6e6;
+}
+
+/* Form section */
+.form-section {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-section input {
+  width: calc(33% - 10px);
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.form-section button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background: #28a745;
+  color: white;
+  cursor: pointer;
+}
+.form-section button:hover {
+  background: #218838;
+}
+
+/* Jobs section */
+.jobs-section {
+  max-width: 700px;
+  margin: 20px auto;
+}
+.jobs-section ul {
+  list-style: none;
+}
+.jobs-section li {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+.jobs-section button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.jobs-section button.update {
+  background: #ffc107;
+  color: white;
+}
+.jobs-section button.delete {
+  background: #dc3545;
+  color: white;
+}
+.jobs-section button.update:hover {
+  background: #e0a800;
+}
+.jobs-section button.delete:hover {
+  background: #c82333;
+}
