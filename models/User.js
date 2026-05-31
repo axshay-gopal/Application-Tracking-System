@@ -1,19 +1,19 @@
-//---- creating Schema for login
 const mongoose = require("mongoose");
-
 const userSchema = new mongoose.Schema({
   email: {
     type: String,
-    required: true,
     unique: true,
-    trim: true,
-  },
-  password: {
-    type: String,
     required: true,
     trim: true,
+    lowercase: true,
+  },
+  passowrd: {
+    type: String,
+    trim: true,
+    require: true,
+    select: false,
   },
 });
 
-const user = mongoose.model("User", userSchema);
+const User = mongoose.model("User", userSchema);
 module.exports = User;
